@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - print _putchar follow by space
+ * print_alphabet - print alphabets follow by space
  * Return: nothing
  */
 void print_alphabet(void)
