@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * islower - check if a number is lowercase
+ * _islower - check if a number is lowercase
  * Return: 1 in true
  * 0 if false
  * @c: an integer
