@@ -1,14 +1,13 @@
 #include "main.h"
 /**
- * main - print _putchar follow by space
- * Return: 1 when successfuly run
+ * print_alphabet - print _putchar follow by space
+ * Return: nothing
  */
-int main(void)
+void print_alphabet(void)
 {
 	char ch;
 
 	for (ch='a'; ch <='z'; ch++)
 		_putchar(ch);
 	_putchar('\n');
-	return (0);
 }
