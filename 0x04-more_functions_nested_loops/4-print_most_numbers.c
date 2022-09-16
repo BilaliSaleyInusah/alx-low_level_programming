@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
- * print_numbers - is used to print numbers from 0 to 9 excluding 2 and 4
- * Return: 1 on success and 0 on error
+ *print_most_numbers - prints numbers except 2 and 4
+ *Return: returns nothing
  */
-
-void print_numbers(void)
+void print_most_numbers(void)
 {
-	int a;
+	int n;
 
-	for (a = 48; a <= 57; a++)
+	for (n = 48; n < 58; n++)
 	{
-		if (a == 50 || a == 52)
+		if ((n == 50) || (n == 52))
+		{
 			continue;
-		_putchar(a);
+		}
+		putchar(n);
 	}
-	_putchar('\n');
+	putchar(10);
 }

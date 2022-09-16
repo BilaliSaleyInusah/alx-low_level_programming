@@ -1,29 +1,28 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
- * print_square - is used to print square
- * @size: is the size of the square
- * Return: void
+ *print_square - prints squares
+ *@size: parameter
+ *Return: returns nothing
  */
-
-void print_diagonal(int size)
+void print_square(int size)
 {
-	int i;
-	int j;
+	int inc1, inc2;
 
-	i = 0;
-	if (n > 0)
+	if (size > 0)
 	{
-		while (i <= n)
+		for (inc1 = 0; inc1 < size; inc1++)
 		{
-			for (j = 0; j <= n; j++)
+			for (inc2 = 0; inc2 < (size - 1); inc2++)
 			{
-				if (i == j)
-					_putchar(35);
+				putchar('#');
 			}
-			_putchar('\n');
-			i++;
+			putchar('#');
+			putchar('\n');
 		}
+	}
+	else
+	{
+		putchar('\n');
 	}
 }

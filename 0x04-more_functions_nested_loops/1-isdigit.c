@@ -1,21 +1,14 @@
-#include <stdio.h>
 #include "main.h"
-
 /**
- * _isdigit - is used to check if a character is digit
- * @c: is the charater passed unto the function
- * Return: 1 if c is digit else 0
+ * _isdigit - checks whether a  character is a digit or not
+ * @c: tested character
+ * Return: 1 if it is, 0 otherwise
  */
-
 int _isdigit(int c)
 {
-	int i;
-
-	for (i = 48, i <= 57; i++)
+	if ((c >= 48) && (c <= 57))
 	{
-		if (i == c)
-			return (1)
-		else
-			return (0)
+		return (1);
 	}
+	return (0);
 }

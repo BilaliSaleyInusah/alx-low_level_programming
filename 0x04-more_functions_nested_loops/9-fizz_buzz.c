@@ -1,36 +1,39 @@
 #include <stdio.h>
-#include "main.h"
-
 /**
- * fizz_buzz - is used to print 1 t0 100 and replace
- * mul 3 by Fizz and mul 5 by Buzz and mul 3 and mul 5 by FizzBuzz
- * Return: 1 on success and 0 on error
+ *main - program that prints either number
+ *or fizz or buzz or fizzBuzz
+ *Return: returns 0
  */
-
-void print_numbers(void)
+int main(void)
 {
-	int a;
+	int num = 1;
 
-	for (a = 1; a <= 100; a++)
+	while (num++ < 100)
 	{
-		if ((a % 3 == 0) && (a % 5 == 0))
+		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
-		else if (a % 3 == 0)
+		else if ((num % 3) == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
-		else if (a % 5 == 0)
+		else if ((num % 5) == 0)
 		{
-			printf("Buzz");
+			if (num != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
 		else
 		{
-			printf("%d", a);
+			printf("%d ", num);
 		}
-		if (a < 100)
-			printf(" ");
 	}
-	_putchar('\n');
+	printf("\n");
+	return (0);
 }
