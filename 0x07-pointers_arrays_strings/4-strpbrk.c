@@ -7,7 +7,7 @@
  * @accept: the accepted character
  * Return: pointer to the char or nul
  */
-char *_strchr(char *s, char c)
+char *_strpbrk(char *s, char c)
 {
 	int i, j, k;
 

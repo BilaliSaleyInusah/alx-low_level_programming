@@ -7,7 +7,7 @@
  * @accept: number of bytes
  * Return: pointer to the char or nul
  */
-char *_strspn(char *s, char accept)
+unsigned int *_strspn(char *s, char accept)
 {
 	int i, j, f, flag;
 
