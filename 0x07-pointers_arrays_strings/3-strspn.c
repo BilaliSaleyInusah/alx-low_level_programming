@@ -12,7 +12,7 @@ char *_strspn(char *s, char accept)
 	int i, j, f, flag;
 
 	f = 0;
-	for (i = 0; s[i] != '\0', i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		flag = 0;
 		for (j = 0; *accept[j] != '\0'; j++)
