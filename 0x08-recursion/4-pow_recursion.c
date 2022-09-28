@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _pow_recursion - calculate a factorial num for num
- * @x: the base number
+ * @n: the base number
  * @y: the exponent number
  * Return: x^y
  */
