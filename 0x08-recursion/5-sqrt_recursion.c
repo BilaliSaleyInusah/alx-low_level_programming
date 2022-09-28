@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-int actual_recursion(int n, int x);
+int actual_sqrt_recursion(int n, int x);
 
 /**
  * _sqrt_recursion - calculate the sqrt
