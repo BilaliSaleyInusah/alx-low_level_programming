@@ -24,9 +24,9 @@ int is_prime_number(int n)
  */
 int actual_prime_number(int n, int x)
 {
-	if (i == 1)
+	if (x == 1)
 		return (1);
-	if (n % x == 0 && i > 0)
+	if (n % x == 0 && x > 0)
 		return (0);
 	return (actual_prime_number(n, x - 1));
 }
