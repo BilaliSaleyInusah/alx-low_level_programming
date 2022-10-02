@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a , b;
+	int a, b, c;
 	char error[10] = "Error";
 
 	if (argc != 3)
@@ -16,11 +16,11 @@ int main(int argc, char *argv[])
 		printf("%s\n", error);
 		return (1);
 	}
-	else
+	for (c = 0; a < argc; a++)
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
-		printf("%d\n", a * b);
 	}
+	printf("%d\n", a * b);
 	return (0);
 }
