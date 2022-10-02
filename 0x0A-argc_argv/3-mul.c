@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("%s\n", error);
 		return (1);
 	}
-	for (c = 0; a < argc; a++)
+	for (c = 0; c < argc; c++)
 	{
 		a = atoi(argv[1]);
 		b = atoi(argv[2]);
