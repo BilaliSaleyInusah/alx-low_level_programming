@@ -12,8 +12,10 @@ int main(int argc, char *argv[])
 	char error[10] = "Error";
 
 	if (argc != 3)
+	{
 		printf("%s\n", error);
-		return (1)
+		return (1);
+	}
 	else
 	{
 		a = atoi(argv[1]);
