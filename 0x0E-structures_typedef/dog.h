@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 #include <stdio.h>
 /**
  * struct dog - is used to declear dog structure
@@ -12,3 +15,9 @@ struct dog
 	float age;
 	char *owner;
 }
+
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+
+#endif
