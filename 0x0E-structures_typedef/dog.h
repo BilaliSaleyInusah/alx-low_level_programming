@@ -1,7 +1,5 @@
 #ifndef DOG_H
 #define DOG_H
-
-#include <stdio.h>
 /**
  * struct dog - is used to declear dog structure
  * @name: the name
